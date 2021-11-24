@@ -18,6 +18,20 @@ body {
   position: relative;
 }
 
+body::-webkit-scrollbar {
+  width: 10px;               
+}
+  
+body::-webkit-scrollbar-track {
+  background: white;       
+}
+  
+body::-webkit-scrollbar-thumb {
+  background-color: #8C0000;   
+  border-radius: 20px;       
+  border: 3px solid #8C0000;  
+}
+
 .content {
   height: 100%;
   min-height: 100vh;
