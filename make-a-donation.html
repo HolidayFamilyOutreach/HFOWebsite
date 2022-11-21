@@ -12,14 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Style+Script&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/098d125266.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/42d610bb8b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.paypal.com/sdk/js?client-id=AQojO873TxssFJ1ISdlt2DgTBwhmCiUgZuyXAP4Q_MeCPoWGKj2UOCe3kXdiKdCUjMzUH6ZzP2GDYoO_&currency=USD"></script>
     <script src="JavaScript/paypalScript.js" defer></script>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" style="opacity: 0.9;">
       <div class="container-fluid">
     
     
@@ -29,7 +29,13 @@
     
     
         <div class="collapse navbar-collapse" id="navbarToggler2">
-          <ul class="navbar-nav underlineEffects">
+          <ul class="navbar-nav mx-auto" style="padding-left: 25vw;">
+            <img src="images/hfo_logo.png" style="width: 3vw; height: auto;" alt="">
+          </ul>
+          <ul class="navbar-nav mx-auto">
+            <a href="index.html" id="HFOTitle" class="navbar-brand" style="color: white;">Holiday Family Outreach</a>
+          </ul>
+          <ul class="navbar-nav underlineEffects mx-auto" style="padding-right: 25vw;">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
@@ -39,16 +45,11 @@
             <li class="nav-item">
               <a class="nav-link" href="news.html">News</a>
             </li>
-          </ul>
-          <ul class="navbar-nav mx-auto center">
-            <a href="index.html" id="HFOTitle" class="navbar-brand">Holiday Family Outreach</a>
-          </ul>
-          <ul class="navbar-nav ms-auto underlineEffects">
             <li class="nav-item">
               <a class="nav-link active" href="make-a-donation.html">Make a Donation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
+              <a class="nav-link" href="#">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -58,40 +59,19 @@
         
         </div>
       </nav>
-
     <div class="buffer-home"></div>
 <div class="content">
-    <div class="row payment-container" data-aos="fade-in" data-aos-duration="3000">
-      <div class="payment-heading">
-        <h1 style="text-shadow: 1px 1px 20px #000000;">Make a Donation!</h1>
-        <p style="font-size: 1.5rem; color: white;">Every donation counts! Donate using any of the preset buttons below or enter however much you would like! Thank you for any contributions in advance.</p>
-        <hr class="custom-hr">  
-      </div>
-      <!-- <div class="donate-btn-container">
-        <button class="submit-btn" id="submitPaymentTen">$10</button>
-        <button class="submit-btn" id="submitPaymentTwenty">$20</button>
-        <button class="submit-btn" id="submitPaymentFifty">$50</button>
-        <button class="submit-btn" id="submitPaymentHundred">$100</button>
-      </div>
-      <hr class="custom-hr">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 style="text-shadow: 1px 1px 20px #000000; font-size: 1.5rem;">Custom Donation Value</h3>
-          <p style="color: white;">If the preset donation amounts above do not satisfy your desired contribution amount, please enter a value into the box and click the cooresponding button that says "Donate"</p>
-        </div>
-        <div class="custom-payment-column col-md-6">
-          <p style="display: inline;">Enter Amount: </p>
-          <input id="custom-textbox" name="custom-textbox" type="number" class="custom-payment-box">
-          <button class="submit-btn-2" id="submitPaymentCustom">Donate</button>
-        </div>
+    <div class="payment-card">
+      <h1 style="background-color: transparent; color: white;">Make a Donation With Paypal</h1>
+      <hr style="margin: 20px auto 20px auto;">
+      <p style="font-size: 1.2rem; color: white;">Every donation counts! Donate using any of the preset buttons below or enter however much you would like! Thank you for any contributions in advance.</p>
+      <input id="amount" name="amount-textbox" type="number" class="amount-textbox" placeholder="Amount">
+      <div id="paypal" class="paypal-button-container" data-aos="fade-in" data-aos-duration="3000">
+      
       </div>
     </div>
-    <div class="middle-container">
-      <h2 class="or-heading">Or</h2>
-    </div> -->
-    </div>
-    <div class="paypal-container" data-aos="fade-in" data-aos-duration="3000">
-      <h1 class="paypal-heading">Pay With Paypal</h1>
+    <!-- <div class="paypal-container" data-aos="fade-in" data-aos-duration="3000">
+
       <hr class="custom-hr" />
       <p class="amount-desc">Enter Amount: </p>
       <input id="amount" name="amount-textbox" type="number" class="amount-textbox">
@@ -99,15 +79,15 @@
     <div id="paypal" class="paypal-button-container" data-aos="fade-in" data-aos-duration="3000">
       
     </div>
-    <hr class="custom-hr">
-    <div class="row bottom-container">
+    <hr class="custom-hr"> -->
+    <footer class="row bottom-container">
       <div class="links-home">
         <a class="footer-link " href="contact-us.html">Contact Us</a>
         <img src="images/HFOLogo.png" class="bottom-logo-home"/>
         <a class="footer-link " href="https://www.facebook.com/Holiday-Family-Outreach-Inc-143741748977138">Facebook</a>
       </div>
       <p class="bottom-p">© 2021 Adams County Holiday Family Outreach.</p>
-    </div>
+    </footer>
   </div>
     <script src="JavaScript/paymentScript.js"></script>
     <script src="JavaScript/main.js"></script>

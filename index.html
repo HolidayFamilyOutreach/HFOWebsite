@@ -12,13 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@700&family=Style+Script&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/098d125266.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/42d610bb8b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather&family=Oxygen&family=Permanent+Marker&family=Secular+One&display=swap" rel="stylesheet">
   </head>
   <body>
   
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top" style="opacity: 0.9;">
       <div class="container-fluid">
     
     
@@ -28,7 +28,13 @@
     
     
         <div class="collapse navbar-collapse" id="navbarToggler2">
-          <ul class="navbar-nav underlineEffects">
+          <ul class="navbar-nav mx-auto" style="padding-left: 25vw;">
+            <img src="images/hfo_logo.png" style="width: 3vw; height: auto;" alt="">
+          </ul>
+          <ul class="navbar-nav mx-auto">
+            <a href="index.html" id="HFOTitle" class="navbar-brand" style="color: white;">Holiday Family Outreach</a>
+          </ul>
+          <ul class="navbar-nav underlineEffects mx-auto" style="padding-right: 25vw;">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
             </li>
@@ -38,16 +44,11 @@
             <li class="nav-item">
               <a class="nav-link" href="news.html">News</a>
             </li>
-          </ul>
-          <ul class="navbar-nav mx-auto center">
-            <a href="index.html" id="HFOTitle" class="navbar-brand">Holiday Family Outreach</a>
-          </ul>
-          <ul class="navbar-nav ms-auto underlineEffects">
             <li class="nav-item">
               <a class="nav-link" href="make-a-donation.html">Make a Donation</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
+              <a class="nav-link" href="#">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact-us.html">Contact Us</a>
@@ -61,12 +62,15 @@
     <div class="buffer-home"></div>
     <div class="content">
 
-    <div class="row top-container-home" data-aos="fade-in" data-aos-duration="3000">
-      <div class="col-md-12">
-        <img class="hfo-img" src="images/HFO-Logo.jpg" alt="HFO Logo"/>
+    <div class="row top-container-home">
+      <div class="title-container">
+        <h1 style="color: white; width: 30%; padding: 10px 0 10px 0; margin: auto;">Holiday Family Outreach</h1>
       </div>
-      <div class="information-row-home" data-aos="fade-in" data-aos-duration="3000">
-        <h2>What is Holiday Family Outreach?</h2>
+      <div class="parralax-main" id="main-slideshow"></div>
+      <div class="information-row-home">
+        <h2 class="heading-home-right">What is Holiday Family Outreach?</h2>
+        <br>
+        <br>
         <img class="left-side-img-home" src="images/Battlefield Harley - Santa and Elves.jpg" alt="Battlefield Harley - Santa and Elves"/>
         <p class="main-text-home">
           Since 1953, Holiday Family Outreach, an all-volunteer nonprofit 501(c)3 organization, has provided Christmas toys and food to low-income families in Adams County, Pennsylvania.
@@ -76,10 +80,11 @@
       <div class="col-md-12">
         <hr class="custom-hr" />
       </div>
-      <div class="information-row-home" data-aos="fade-in" data-aos-duration="3000">
+      <div class="information-row-home">
         <h2 class="heading-home-right">Goal for 2022</h2>
         <br>
-        <img class="right-side-img-home" src="images/HFOEvent.JPG" alt="Voluteers at HFO Event"/>
+        <br>
+        <img class="right-side-img-home" src="images/Image10.jpg" alt="Voluteers at HFO Event"/>
         <p class="main-text-home">
           Our goal is to raise $60,000 for food certificates allowing us to provide $50 food certificates for 1,300 referrals. Food certificates are offered to low-income families and elderly residents through the Office of Aging. We also accept toy donations! Toy donations can be dropped off at United Way or you can make your donation payable to: Holiday Family Outreach, Inc and mail to : PO Box 4013, Gettysburg, PA 17325 or
           <a class="donate-link" href="make-a-donation.html">Donate Here</a> Thank You!
@@ -87,16 +92,16 @@
       </div>
     </div>
     <hr class="custom-hr">
-    <div class="bottom-container">
+    <footer class="bottom-container">
       <div class="links-home">
         <a class="footer-link " href="contact-us.html">Contact Us</a>
-        <img src="images/HFOLogo.png" class="bottom-logo-home"/>
+        <img src="images/hfo_logo.png" class="bottom-logo-home"/>
         <a class="footer-link " href="https://www.facebook.com/Holiday-Family-Outreach-Inc-143741748977138">Facebook</a>
       </div>
       <p class="bottom-p">© 2021 Adams County Holiday Family Outreach.</p>
-    </div>
+    </footer>
   </div>
-    <script src="JavaScript/main.js"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
