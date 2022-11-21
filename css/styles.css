@@ -9,13 +9,57 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   text-align: center;
-  background-color: grey;
-  color: white;
+  color: #000000;
   font-family: 'Oxygen', sans-serif;
   display: flex;
   flex-direction: column;
   height: 100%;
   position: relative;
+  min-height: 100vh;
+}
+
+.parralax-main {
+  z-index: 3;
+  background-image: url("../images/HFOEvent.JPG");
+
+  height: 80vh;
+  width: 100%;
+
+  filter:  brightness(60%);
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parralax-about-us {
+  z-index: 3;
+  background-image: url("../images/about-us-img-2.JPG");
+  height: 80vh;
+  width: 100%;
+  filter:  brightness(60%);
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title-container {
+  z-index: 4;
+  position: absolute;
+  top: 22%;
+  margin: auto;
+  font-weight: bolder;
+  text-align: center;
+  width: 100%;
+  color: white;
 }
 
 .content {
@@ -26,13 +70,16 @@ body {
 }
 
 h1 {
-  color: #FFBE0F;
+  color: #000000;
+  background-color: #8C0000;
 }
 
 
 h2 {
   font-size: 1.5rem;
-  color: #FFBE0F;
+  color: white;
+  background-color: #8C0000;
+  padding: 0 15px 0 15px;
   line-height: 2;
 }
 
@@ -102,7 +149,7 @@ a:active {
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #BD2000;
+   background-color: #8C0000;
    position: fixed;
    width: 100%;
    z-index: 9;
@@ -225,7 +272,6 @@ a:active {
 /********Class CSS Styles for Home Page*******/
 
 .top-container-home {
-  background-color: grey;
   border-radius: 0 0 20px 20px;
   margin: auto;
   padding-bottom: 10rem;
@@ -285,12 +331,16 @@ a:active {
 }
 
 .bottom-container {
-  background-color: #BD2000;
+  background-color: #8C0000;
   margin: auto;
   width: 100%;
-  bottom: 0;
-  position: absolute;
   height: 10rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom-p {
+  color: white;
 }
 
 
@@ -325,8 +375,8 @@ a:active {
 }
 
 .bottom-logo-home {
-  height: 75px;
-  width: 75px;
+  height: auto;
+  width: 2vw;
   margin: auto;
 }
 
@@ -481,7 +531,7 @@ a:active {
   margin: auto;
   text-align: left;
   line-height: 2;
-  padding-bottom: 10rem;
+  padding-bottom: 20vh;
   padding-top: 30px;
 }
 
@@ -531,7 +581,7 @@ a:active {
    font-weight: 100;
    padding: 5px;
    width: 20%;
-   background-color: #BD2000;
+   background-color: #8C0000;
    border: none;
    text-decoration: none;
    cursor: pointer;
@@ -608,15 +658,22 @@ input::-webkit-inner-spin-button {
 }
 
 .amount-textbox {
-  border-radius: 8px;
-  background-color: #808997;
+  background-color: transparent;
   border: none;
+  border-bottom: 1px solid white;
   font-size: 1rem;
-  width: 10%;
+  width: 30%;
   height: auto;
   color: white;
-  padding: 5px;
-  margin-top: 30px;
+  margin: 30px 0 30px 0
+}
+
+.amount-textbox::placeholder {
+  color: white;
+}
+
+.amount-textbox:focus {
+  outline: none;
 }
 
 .amount-desc {
@@ -637,12 +694,12 @@ input::-webkit-inner-spin-button {
 }
 
 .submit-btn-2:hover {
-  background: #BD2000;
+  background: #8C0000;
   text-decoration: none;
 }
 
 /* .bottom-container-cu {
-  background-color: #BD2000;
+  background-color: #8C0000;
   margin: auto;
   border-radius: 20px 20px 0 0;
   position: absolute;
@@ -650,21 +707,7 @@ input::-webkit-inner-spin-button {
   width: 100%;
 } */
 
-.mailing-address-container {
-  height: 29rem;
-}
-
-.toy-address-container {
-  height: 29rem;
-}
-
-.phone-container {
-  height: 29rem;
-}
-
 .top-container-cu {
-  background-color: grey;
-  border-radius: 0 0 20px 20px;
   margin: auto;
   margin-top: 6rem;
   height: 100%;
@@ -673,15 +716,17 @@ input::-webkit-inner-spin-button {
 }
 
 .cu-headings {
-  color: #8C0000;
+  color: white;
+  background-color: transparent;
+  font-size: 1.8rem;
+  margin-bottom: 3vh;
 }
 
 
 .news-container {
   width: 100%;
   display: block;
-  margin: auto;
-  padding-top: 50px;
+  margin: auto auto 5vh auto;
 }
 
 .news-title {
@@ -713,4 +758,23 @@ input::-webkit-inner-spin-button {
 
 .success-titles {
   color: #8C0000;
+}
+
+.payment-card {
+  background-color: rgba(140, 0, 0, 0.8);
+  border-radius: 5px;
+  align-items: center;
+  margin: 10vh auto 20vh auto;
+  width: 40%;
+  padding: 30px;
+}
+
+.contact-card {
+  border-radius: 5px;
+  background-color: rgba(140, 0, 0, 0.8);
+  align-items: center;
+  padding: 30px;
+  width: 50%;
+  margin: auto;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
