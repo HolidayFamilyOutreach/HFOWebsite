@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/42d610bb8b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://www.paypal.com/sdk/js?client-id=AQojO873TxssFJ1ISdlt2DgTBwhmCiUgZuyXAP4Q_MeCPoWGKj2UOCe3kXdiKdCUjMzUH6ZzP2GDYoO_&currency=USD"></script>
-    <script src="JavaScript/paypalScript.js" defer></script>
   </head>
   <body>
 
@@ -30,7 +28,7 @@
     
         <div class="collapse navbar-collapse" id="navbarToggler2">
           <ul class="navbar-nav mx-auto" style="padding-left: 25vw;">
-            <img src="images/hfo_logo.png" style="width: 3vw; height: auto;" alt="">
+            <img src="" style="width: 3vw; height: auto;" alt="">
           </ul>
           <ul class="navbar-nav mx-auto">
             <a href="index.html" id="HFOTitle" class="navbar-brand" style="color: white;">Holiday Family Outreach</a>
@@ -64,11 +62,12 @@
     <div class="payment-card">
       <h1 style="background-color: transparent; color: white;">Make a Donation With Paypal</h1>
       <hr style="margin: 20px auto 20px auto;">
-      <p style="font-size: 1.2rem; color: white;">Every donation counts! Donate using any of the preset buttons below or enter however much you would like! Thank you for any contributions in advance.</p>
-      <input id="amount" name="amount-textbox" type="number" class="amount-textbox" placeholder="Amount">
-      <div id="paypal" class="paypal-button-container" data-aos="fade-in" data-aos-duration="3000">
-      
-      </div>
+      <p style="font-size: 1.2rem; color: white;">Every donation counts! Donate by clicking the button below! Thank you for any contributions in advance.</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="LV79L7QANKKJJ" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>        
     </div>
     <!-- <div class="paypal-container" data-aos="fade-in" data-aos-duration="3000">
 
@@ -89,7 +88,6 @@
       <p class="bottom-p">© 2021 Adams County Holiday Family Outreach.</p>
     </footer>
   </div>
-    <script src="JavaScript/paymentScript.js"></script>
     <script src="JavaScript/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
